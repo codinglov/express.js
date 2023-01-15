@@ -9,7 +9,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 class Notes {
   read() {
-    return readFileAsync('db/db.json', JSON.stringify(note));
+    return readFileAsync('db/db.json', 'utf8');
   }
 
   write(note) {
