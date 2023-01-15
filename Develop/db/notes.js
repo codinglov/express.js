@@ -39,7 +39,7 @@ class Notes {
     }
 
    //Add a unique id to the note using uuid package
-   const new Note = {title,text, id: uuidv1() };
+   const newNote = {title,text, id: uuidv1() };
    
    //Get all notes,remove the note with the given id, write the filtered note
    return this.getNotes()
