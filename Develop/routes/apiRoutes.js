@@ -20,7 +20,7 @@ router.post('/notes',(req,res) => {
 });
 
 //DELETE "/API/NOTES"
-router.delete('/notees/:id',(req,res) => {
+router.delete('/notes/:id',(req,res) => {
     notes
        .removeNote(req.params.id)
        .then(() => res.json({ ok: true}))
